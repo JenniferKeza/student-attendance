@@ -4,7 +4,7 @@ use JetBrains\PhpStorm\NoReturn;
 
 if (!function_exists('dd')) {
     #[NoReturn]
-    function dd($var): void
+    function dd(...$var): void
     {
         var_dump($var);
         die();
