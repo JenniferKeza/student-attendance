@@ -1,9 +1,9 @@
 <?php
-$host = '127.0.0.1';
-$db_name = 'students';
-$user = 'root';
-$pass = '';
-$charset = 'utf8mb4'; 
+$host = $_ENV["DB_HOST"];
+$db_name = $_ENV["DB_DATABASE"];
+$user = $_ENV["DB_USERNAME"];
+$pass = $_ENV["DB_PASSWORD"];
+$charset = $_ENV["DB_CHARSET"];
 $dsn = "mysql:host=$host;dbname=$db_name;charset=$charset";
 
 $options = [
