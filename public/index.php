@@ -6,12 +6,10 @@ const VENDOR_PATH = APP_PATH.'/vendor';
 require VENDOR_PATH.'/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(APP_PATH);
 $dotenv->load();
-/*die(PUBLIC_PATH);*/
+dd(env("DB_HOST"));
 include '../db/queries.php';
 
 $title = '';
-
-
 
 switch ($_SERVER['REQUEST_URI']) {
     case '':
