@@ -1,0 +1,14 @@
+{
+    "name": "jennifer/student-attendance-screencast",
+    "description": "A small app for managing the attendances of students",
+    "type": "project",
+    "require": {
+        "php": "^8.5"
+    },
+    "authors": [
+        {
+            "name": "JenniferKeza",
+            "email": "jennifer.keza@student.hepl.be"
+        }
+    ]
+}
